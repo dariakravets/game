@@ -6,6 +6,7 @@ var clickCounter = 0;
 var correctGuess = 0;
 var clickImages = [];
 var timeOutRestore = 1000;
+var clicks = [];
 
 //page load
 $(function(){
@@ -43,7 +44,7 @@ bytutorialHTML5Game = {
 
         //load the images and image cover
         for(var i = 1; i <= noOfBoxGame; i++){
-            boxes += "<div id='box-" + i + "' class='box-picture'><img src='game-images/" + (parseInt(boxIndexes[i-1]) + 1) + ".jpg'/></div>";
+            boxes += "<div id='box-" + i + "' class='box-picture'><img src='svg_images/" + (parseInt(boxIndexes[i-1]) + 1) + ".svg'/></div>";
             boxCover += "<div id='box-cover-" + i + "' class='box-cover' data-id='" + (parseInt(boxIndexes[i-1]) + 1) + "'></div>";
         }
         boxCover = "<div class='box-cover-wrapper'>" + boxCover + "</div>";
@@ -77,6 +78,9 @@ bytutorialHTML5Game = {
 
                         //if the game is completed then perform a reset
                         if(correctGuess >= (noOfBoxGame/2)){
+                            clicks.push(clickCounter);
+                            localStorage.setItem("allclicks", JSON.stringify(clicks));
+                            $("#numbers").html(localStorage.getItem("allclicks"));
                             $("#canvas-game, #game-statistic").fadeOut(1000);
                             $("#game-message").addClass('animated bounceInDown').css('animation-delay', '1s').show();
                             correctGuess = 0;
