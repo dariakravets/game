@@ -1,0 +1,103 @@
+html,body{
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: #F4DBC9;
+    background-image: url("/images/side1.svg"), url("/images/side2.svg");
+    background-position: left, right;
+    background-repeat: no-repeat;
+}
+
+#canvas-game{
+    text-align:left;
+    width:800px;
+    margin-top:20px;
+    margin-left: 400px;
+    /*border:Solid 1px #ebe5e5;*/
+    height:385px;
+    position:relative;
+}
+
+#game-statistic{
+    text-align:left;
+    width:612px;
+    margin-top:20px;
+    padding-top: 240px;
+    padding-right: 80px;
+}
+
+
+#statistic-left, #statistic-right{
+    font-family: Bahnschrift;
+    font-size:24px;
+    float:left;
+}
+
+#statistic-right{
+    float:right;
+}
+
+.bold-text{
+    font-weight:bold;
+}
+
+.clear{
+    clear:both;
+}
+
+.box-picture{
+    float:left;
+    width:100px;
+    height:75px;
+    display:none;
+    padding: 10px 20px;
+}
+
+.box-picture > img{
+    width:100px;
+    height:75px;
+}
+
+.box-cover-wrapper{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:100;
+    padding: 10px 20px;
+}
+
+.box-cover{
+    width:100px;
+    height:75px;
+    background:url("/images/card.png") no-repeat;
+    /*border:solid 1px #ebe5e5;*/
+    float:left;
+    cursor:pointer;
+    padding: 10px 20px;
+}
+
+#game-message{
+    margin:0 auto;
+    font-family: Bahnschrift;
+    font-size:24px;
+    color: #F4DBC9;
+    background:#519188;
+    padding:15px;
+    border:solid 1px #ccc;
+    border-radius:5px;
+    width:612px;
+    display:none;
+}
+
+#btnRestart{
+    padding:15px;
+    font-family: Bahnschrift;
+    font-size:18px;
+    text-align:center;
+    background:#F4DBC9;
+    margin-top:20px;
+    color:#519188;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}

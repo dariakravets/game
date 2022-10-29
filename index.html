@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>Memorize</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css" rel="stylesheet"/>
+  <link href="styles.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="canvas-game">
+  <div id="game-content"></div>
+</div>
+<div id="game-statistic">
+  <div id="statistic-left">Number of Clicks: <span id="no-of-clicks" class="bold-text">0</span></div>
+  <div id="statistic-right">Correct Guess: <span id="correct-guess" class="bold-text">0</span></div>
+  <div class="clear"></div>
+</div>
+<div id="game-message">
+  <div class="congrats-message">Congratulations, you have revealed all the images!</div>
+  <div class="statistics">You have done better than </div>
+  <div id="my_dataviz"></div>
+  <button id="btnRestart" type="button">Restart</button>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+</body>
+</html>
