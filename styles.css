@@ -88,7 +88,7 @@ html,body{
 }
 
 #game-message{
-    margin:0 auto;
+    margin:210px auto;
     font-family: Bahnschrift;
     font-size:24px;
     color: #F4DBC9;
@@ -96,10 +96,24 @@ html,body{
     border-radius:20px;
     width:612px;
     display:none;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
 #btnStart{
+    padding:15px;
+    font-family: Bahnschrift;
+    font-size:18px;
+    text-align:center;
+    background:#F4DBC9;
+    margin-top:20px;
+    color:#519188;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#btnRestart{
     padding:15px;
     font-family: Bahnschrift;
     font-size:18px;
