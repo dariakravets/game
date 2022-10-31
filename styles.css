@@ -8,6 +8,17 @@ html,body{
     background-repeat: no-repeat;
 }
 
+#stats{
+    margin:0 auto;
+    background: #519188;
+    font-family: Bahnschrift;
+    font-size: 24px;
+    color: #F4DBC9;
+    width: 612px;
+    border-radius:20px;
+    padding-bottom: 20px;
+}
+
 #canvas-game{
     text-align:left;
     width:800px;
@@ -23,7 +34,7 @@ html,body{
     width:612px;
     margin-top:20px;
     padding-top: 240px;
-    padding-right: 80px;
+    padding-left: 420px;
 }
 
 
@@ -82,14 +93,13 @@ html,body{
     font-size:24px;
     color: #F4DBC9;
     background:#519188;
-    padding:15px;
-    border:solid 1px #ccc;
-    border-radius:5px;
+    border-radius:20px;
     width:612px;
     display:none;
+    padding-bottom: 20px;
 }
 
-#btnRestart{
+#btnStart{
     padding:15px;
     font-family: Bahnschrift;
     font-size:18px;
